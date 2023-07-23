@@ -1,0 +1,20 @@
+header{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(84, 84, 189);
+    color:white;
+    border: 5px solid black;
+    padding-left:5em;
+}
+h1{
+    display:inline-block;
+    color:black;
+}
+li{
+    display:inline-block;
+    margin:1em;
+    background-color: white;
+    padding:1em;
+    color: black;
+}
