@@ -16,3 +16,10 @@ button{
     display: flex;
     flex-direction: column;
 }
+
+.item-item{
+    border: 1px solid black;
+    padding:1em;
+    margin: 1em;
+    align-items: center;
+}

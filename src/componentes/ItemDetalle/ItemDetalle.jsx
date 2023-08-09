@@ -21,10 +21,10 @@ const ItemDetalle = ({ id, raza, img, precio, stock, descripcion }) => {
 
   return (
     <div>
-      <p>Raza: {raza}</p>
-      <p>ID: {id}</p>
-      <img src={img} alt={raza} width="400px" height="250px" />
+      <h2>{raza}</h2>
+      <img src={img} width="400px" height="250px" alt={raza} />
       <p>Precio: ${precio}</p>
+      <p>ID: {id}</p>
       <p>Stock disponible: {stock}</p>
       <p>Descripción: {descripcion}</p>
 

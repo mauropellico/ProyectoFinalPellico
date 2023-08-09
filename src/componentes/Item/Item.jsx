@@ -4,15 +4,17 @@ import "./Item.css"
 
 const Item = ({ id, raza, precio, img }) => {
   return (
-    <div>
-      <img src={img} width="400px" height="250px" />
-      <h3>Raza: {raza}</h3>
-      <p>Precio: ${precio}</p>
-      <p>Nº: {id}</p>
-      <div className='botones'>
-        <Link to={`/item/${id}`}><button>Ver detalles</button></Link>
+    <>
+      <div className="item-item">
+        <h3>{raza}</h3>
+        <img src={img} width="400px" height="250px" alt={raza} />
+        <p>Precio: ${precio}</p>
+        <p>ID: {id}</p>
+        <div className='botones'>
+          <Link to={`/item/${id}`}><button>Ver detalles</button></Link>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

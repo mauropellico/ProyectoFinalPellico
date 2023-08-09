@@ -5,6 +5,7 @@ import ItemDetalleContainer from './componentes/ItemDetalleContainer/ItemDetalle
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CamionProvider } from './Context/CamionContext'
 import Cart from './componentes/Cart/Cart'
+import Checkout from './componentes/Checkout/Checkout'
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
             <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
             <Route path="/item/:idGanado" element={<ItemDetalleContainer />} />
             <Route path="/camion" element={<Cart/>} />
-            <Route path="/checkout" element={<h2>Próximamente</h2>}/>
+            <Route path="/checkout" element={<Checkout/>}/>
           </Routes>
         </CamionProvider>
       </BrowserRouter>
